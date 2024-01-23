@@ -1,0 +1,23 @@
+@layer base {
+    ul, ul ul, ol, ol ol {
+        @apply
+            list-disc 
+            list-inside 
+            space-y-4
+            mb-4
+            /* dark:text-gray-400 */
+        ;
+    }
+
+    ul ul, ol ol, ul ol, ol ul {
+        @apply
+            mt-4
+            pl-8
+            space-y-2
+        ;
+    }
+
+    ol, ol ol {
+        @apply list-decimal;
+    }
+}

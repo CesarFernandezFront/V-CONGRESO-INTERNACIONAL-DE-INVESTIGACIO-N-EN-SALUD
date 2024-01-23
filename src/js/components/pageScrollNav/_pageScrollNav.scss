@@ -1,0 +1,55 @@
+.side-bar {
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  & nav ul {
+    padding: 0;
+
+    & li {
+      list-style: none;
+
+      & a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 0.6rem 0.3rem;
+        font-weight: 400;
+        transition: all ease-out 250ms;
+
+        &:hover {
+          color: pink;
+        }
+
+        &.active {
+          color: palevioletred; 
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  margin-left: 160px;
+
+  & section {
+    background-color: #f2f2f2;
+    height: 90vh;
+    margin:0;
+    padding:2.5rem 4rem;
+
+    &:nth-of-type(2n) {
+      background-color: #CCC;
+    }
+    
+    &:last-of-type {
+      height: 100vh;
+    }
+  }
+}
+

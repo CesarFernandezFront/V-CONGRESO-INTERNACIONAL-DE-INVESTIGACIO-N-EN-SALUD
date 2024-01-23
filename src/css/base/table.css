@@ -1,0 +1,42 @@
+@layer base {
+    table {
+        @apply w-full;
+        /* min-w-full */
+    }
+
+    table th, table td {
+        @apply px-6 py-4;
+    }
+
+    table th {
+        @apply font-medium text-lg;
+        /* dark:border-neutral-500 */
+    }
+
+    table td {
+        @apply whitespace-nowrap border-t;
+    }
+
+    @media (max-width: 680px) {
+        table.responsive thead {
+            @apply hidden;
+        }
+
+        table.responsive tbody tr {
+            @apply flex flex-col;
+        }
+
+        table.responsive tbody td {
+            @apply flex justify-end;
+        }
+
+        table.responsive tbody td::before {
+            position: absolute;
+            left: 0;
+            @apply pl-4;
+            content: attr(data-label);
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+    }
+}
