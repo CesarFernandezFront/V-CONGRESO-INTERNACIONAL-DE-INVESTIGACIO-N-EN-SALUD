@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+    @apply 
+        w-full md:w-auto
+        md:flex
+        hidden
+        mt-5 md:mt-0 
+        text-right
+        border-t-2 border-primary md:border-none
+    ;
+}
