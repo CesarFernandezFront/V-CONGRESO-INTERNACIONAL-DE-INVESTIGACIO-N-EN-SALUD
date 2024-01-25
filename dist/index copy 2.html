@@ -27,20 +27,20 @@
 </head>
 <body>
   <head>
-    <div class="fixed z-50 w-full bg-primary-d top-0 py-3 shadow-lg">
+    <div class="fixed z-50 w-full bg-primary-m top-0 py-3 shadow-lg">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-wrap items-center justify-between p-3">
           <div class="logo flex flex-wrap items-center justify-between">
             <img src="./img/CIIS.svg" class="pr-2" alt="Logo V Congreso Internacional de Investigación en Salud" title="V Congreso Internacional de Investigación en Salud" />
             <img src="./img/v-congreso.svg" alt="Logo V Congreso Internacional de Investigación en Salud" title="V Congreso Internacional de Investigación en Salud" />
           </div>
-          <div class="flex lg:hidden">
+          <div class="flex md:hidden">
               <button id="hamburger">
                 <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
                 <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
               </button>
           </div>
-          <nav id="menu" class="toggle-menu menu">
+          <nav class="toggle menu">
             <ul>
               <li>
                 <a href="#">Presentación</a>
@@ -48,16 +48,19 @@
               <li>
                 <a href="#">Conferencistas</a>
               </li>
-              <li>
-                <a href="#">Normas</a>
-              </li>
-              <li>
-                <a href="#">Costos</a>
-              </li>
-              <li>
-                <a href="#" class="btn">Inscríbete</a>
-              </li>
             </ul>
+              <a href="#"
+                  class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home
+              </a>
+              <a href="#"
+                  class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Products
+              </a>
+              <a href="#"
+                  class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Pricing
+              </a>
+              <a href="#"
+                  class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact
+              </a>
           </nav>
         </div>
       </div>    
@@ -373,19 +376,26 @@
           <div>04</div>
           <div>05</div>
       </div>
-  </main>
+</main>
 
-  <script src="js/bundle.js"></script>
-  <script>
-      document.getElementById("hamburger").onclick = function toggleMenu() {
-        const navToggle = document.querySelectorAll(".toggle");
-        navToggle.forEach(item => {
-            item.classList.toggle("hidden");
-        });
 
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("inline");
-      }
-  </script>    
+
+
+
+
+
+
+
+
+
+    <script src="js/bundle.js"></script>
+    <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+        const navToggle = document.getElementsByClassName("toggle");
+            for (let i = 0; i < navToggle.length; i++) {
+                navToggle.item(i).classList.toggle("inline");
+            }
+        };
+    </script>    
 </body>
 </html>

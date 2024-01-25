@@ -2,13 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-.menu {
-    @apply 
-        w-full md:w-auto
-        md:flex
-        hidden
-        mt-5 md:mt-0 
-        text-right
-        border-t-2 border-primary md:border-none
-    ;
+
+/* @layer components {
+    .menu {
+        @apply 
+            w-full lg:w-auto
+            lg:flex
+            hidden
+            mt-5 lg:mt-0 
+            text-right
+            border-t-2 border-primary lg:border-none
+        ;
+    }
+} */
+
+@layer components {
+    .menu {
+        @apply 
+            w-full lg:w-auto
+            lg:flex
+            hidden
+            mt-5 lg:mt-0 
+            border-t-2 border-primary lg:border-none
+        ;
+    }
+
+    .menu ul {
+        @apply 
+            inline
+            lg:flex
+            mt-5 lg:mt-0 
+            border-t-2 border-primary lg:border-none
+        ;
+    }
+
+    .menu ul li {
+        @apply 
+            lg:flex
+            items-center
+            justify-center
+        ;
+    }
+
+    .menu ul li a {
+        @apply 
+            block lg:inline-block
+            text-blue-900
+            text-primary
+            /* hover:text-lemon */
+            mx-2
+            px-3 py-3 
+            border-b-2 
+            border-blue-900 lg:border-none
+
+            transition-colors duration-200 ease-linear opacity-100 hover:text-lemon
+            /* transition-opacity duration-1000 ease-out opacity-100 hover:opacity-0  */
+        ;
+    }
+
+    .menu ul a.btn {
+        @apply
+            pt-1.5 pb-2 px-4
+            bg-primary
+            text-white
+            rounded
+            hover:bg-lemon hover:text-primary-d
+        ;
+    }
 }
+

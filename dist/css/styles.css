@@ -8,26 +8,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.menu{
-  margin-top: 1.25rem;
-  display: none;
-  width: 100%;
-  border-top-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 164 183 / var(--tw-border-opacity));
-  text-align: right;
-}
-@media (min-width: 768px){
-  .menu{
-    margin-top: 0px;
-    display: flex;
-    width: auto;
-    border-style: none;
-  }
-}
-/*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
-*/
+/* @layer components {
+    .menu {
+        @apply 
+            w-full lg:w-auto
+            lg:flex
+            hidden
+            mt-5 lg:mt-0 
+            text-right
+            border-t-2 border-primary lg:border-none
+        ;
+    }
+} */
+/* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -378,28 +371,28 @@ hr{
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-ul, ul ul, ol, ol ol{
+.main ul, .main ul ul, .main ol, .main ol ol{
   margin-bottom: 1rem;
   list-style-position: inside;
   list-style-type: disc;
 }
-ul > :not([hidden]) ~ :not([hidden]), ul ul > :not([hidden]) ~ :not([hidden]), ol > :not([hidden]) ~ :not([hidden]), ol ol > :not([hidden]) ~ :not([hidden]){
+.main ul > :not([hidden]) ~ :not([hidden]), .main ul ul > :not([hidden]) ~ :not([hidden]), .main ol > :not([hidden]) ~ :not([hidden]), .main ol ol > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
-ul ul, ol ol, ul ol, ol ul{
+.main ul ul, .main ol ol, .main ul .main ol, .main ol ul{
   margin-top: 1rem;
 }
-ul ul > :not([hidden]) ~ :not([hidden]), ol ol > :not([hidden]) ~ :not([hidden]), ul ol > :not([hidden]) ~ :not([hidden]), ol ul > :not([hidden]) ~ :not([hidden]){
+.main ul ul > :not([hidden]) ~ :not([hidden]), .main ol ol > :not([hidden]) ~ :not([hidden]), .main ul .main ol > :not([hidden]) ~ :not([hidden]), .main ol ul > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
-ul ul, ol ol, ul ol, ol ul{
+.main ul ul, .main ol ol, .main ul .main ol, .main ol ul{
   padding-left: 2rem;
 }
-ol, ol ol{
+.main ol, .main ol ol{
   list-style-type: decimal;
 }
 table{
@@ -566,6 +559,92 @@ table td{
     max-width: 1536px;
   }
 }
+.menu{
+  margin-top: 1.25rem;
+  display: none;
+  width: 100%;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 164 183 / var(--tw-border-opacity));
+}
+@media (min-width: 1024px){
+  .menu{
+    margin-top: 0px;
+    display: flex;
+    width: auto;
+    border-style: none;
+  }
+}
+.menu ul{
+  margin-top: 1.25rem;
+  display: inline;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 164 183 / var(--tw-border-opacity));
+}
+@media (min-width: 1024px){
+  .menu ul{
+    margin-top: 0px;
+    display: flex;
+    border-style: none;
+  }
+}
+.menu ul li{
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1024px){
+  .menu ul li{
+    display: flex;
+  }
+}
+.menu ul li a{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: block;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 164 183 / var(--tw-text-opacity));
+  opacity: 1;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+.menu ul li a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(201 227 188 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px){
+  .menu ul li a{
+    display: inline-block;
+    border-style: none;
+  }
+}
+.menu ul a.btn{
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 164 183 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.menu ul a.btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 227 188 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(1 60 67 / var(--tw-text-opacity));
+}
 .visible{
   visibility: visible;
 }
@@ -588,11 +667,11 @@ table td{
   margin-left: auto;
   margin-right: auto;
 }
-.mt-5{
-  margin-top: 1.25rem;
-}
 .mt-2{
   margin-top: 0.5rem;
+}
+.mt-5{
+  margin-top: 1.25rem;
 }
 .block{
   display: block;
@@ -624,11 +703,11 @@ table td{
 .min-w-full{
   min-width: 100%;
 }
-.max-w-6xl{
-  max-width: 72rem;
-}
 .max-w-7xl{
   max-width: 80rem;
+}
+.max-w-6xl{
+  max-width: 72rem;
 }
 .list-inside{
   list-style-position: inside;
@@ -665,18 +744,34 @@ table td{
 .whitespace-nowrap{
   white-space: nowrap;
 }
-.border-t-2{
-  border-top-width: 2px;
-}
 .border-b-2{
   border-bottom-width: 2px;
 }
 .border-b{
   border-bottom-width: 1px;
 }
+.border-t-2{
+  border-top-width: 2px;
+}
 .border-blue-900{
   --tw-border-opacity: 1;
   border-color: rgb(30 58 138 / var(--tw-border-opacity));
+}
+.bg-primary-m{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 112 125 / var(--tw-bg-opacity));
+}
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 164 183 / var(--tw-bg-opacity));
+}
+.bg-primary-d{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 60 67 / var(--tw-bg-opacity));
+}
+.bg-indigo-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -694,44 +789,16 @@ table td{
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
-.bg-primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 164 183 / var(--tw-bg-opacity));
-}
-.bg-primary-m{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 112 125 / var(--tw-bg-opacity));
-}
-.bg-primary-d{
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 60 67 / var(--tw-bg-opacity));
-}
-.bg-indigo-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
 .p-3{
   padding: 0.75rem;
-}
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 .px-6{
   padding-left: 1.5rem;
@@ -740,6 +807,18 @@ table td{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .pr-2{
   padding-right: 0.5rem;
@@ -764,10 +843,6 @@ table td{
   --tw-text-opacity: 1;
   color: rgb(30 58 138 / var(--tw-text-opacity));
 }
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-green-600{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
@@ -775,6 +850,10 @@ table td{
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -818,6 +897,9 @@ table td{
     border-style: none;
   }
 }
-
-
+@media (min-width: 1024px){
+  .lg\:hidden{
+    display: none;
+  }
+}
 

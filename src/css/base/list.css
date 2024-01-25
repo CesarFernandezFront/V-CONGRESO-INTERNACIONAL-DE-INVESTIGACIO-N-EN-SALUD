@@ -1,5 +1,5 @@
 @layer base {
-    ul, ul ul, ol, ol ol {
+    .main ul, .main ul ul, .main ol, .main ol ol {
         @apply
             list-disc 
             list-inside 
@@ -9,7 +9,7 @@
         ;
     }
 
-    ul ul, ol ol, ul ol, ol ul {
+    .main ul ul, .main ol ol, .main ul .main ol, .main ol ul {
         @apply
             mt-4
             pl-8
@@ -17,7 +17,7 @@
         ;
     }
 
-    ol, ol ol {
+    .main ol, .main ol ol {
         @apply list-decimal;
     }
 }
