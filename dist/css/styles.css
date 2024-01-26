@@ -611,7 +611,7 @@ table td{
   padding-bottom: 0.75rem;
   color: rgb(30 58 138 / var(--tw-text-opacity));
   --tw-text-opacity: 1;
-  color: rgb(0 164 183 / var(--tw-text-opacity));
+  color: rgb(201 227 188 / var(--tw-text-opacity));
   opacity: 1;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,7 +620,7 @@ table td{
 }
 .menu ul li a:hover{
   --tw-text-opacity: 1;
-  color: rgb(201 227 188 / var(--tw-text-opacity));
+  color: rgb(249 237 90 / var(--tw-text-opacity));
 }
 @media (min-width: 1024px){
   .menu ul li a{
