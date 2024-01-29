@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .logo img.pr-2 {
+        height: 100px;
+    }
+
+    .logo img.name {
+        height: 80px;
+    }
+
+    .dinamic {
+        padding-top: 130px;
+    }
+
+    .dinamic__title {
+        @apply 
+            absolute
+            z-20
+            hidden
+            top-12
+            ml-5
+            p-6
+            w-full
+            rounded-xl
+            /* bg-gradient-to-b from-teal-400 to-teal-100 bg-opacity-40 h-screen */
+            /* bg-gradient-to-b from-teal-400 bg-opacity-40 via-transparent to-teal-100 */
+            /* bg-gradient-to-b from-primary bg-opacity-20 via-transparent  */
+
+            md:w-1/2
+            lg:block
+            xl:top-28
+        ;
+        width: 500px;
+        text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+        background: linear-gradient(180deg, rgba(0,164,183,0.4) 0%, rgba(0,164,183,0) 100%);
+    }
+    .dinamic__title h1 {
+        @apply text-4xl;
+    }
+    .dinamic__title h1 span {
+        @apply text-2xl font-bold;
+    }
+    .dinamic__title h2 {
+        @apply font-sans text-xl;
+    }
+      
+
+    .salud img {
+        @apply
+            relative
+            ml-3
+            py-2
+            pl-3
+            border-white
+            border-l-2
+        ;
+    }
+    .salud:before {
+        content: "";
+        left: 10px;
+        height: 56%;
+        width: 3px;
+        @apply absolute bottom-0 bg-white;
+    }
+
+    section.section-in {
+        /* padding-top: 140px; */
+        @apply py-28 ss:pt-52
+    }
+
+    .normas ul {
+
+    }
+
+
+    @media (max-width: 420px) {
+        .dinamic {
+            margin-top: 110px;
+        }
+
+        section.section-in {
+            padding-top: 120px;
+        }
+    }
+
+    .tematicas p {
+        @apply
+            relative
+            m-0
+            p-4
+            font-bold
+            bg-primary
+            rounded-lg
+        ;
+    }
+    .tematicas p::after {
+        content: "";
+        top: -10px;
+        margin-left: -10px;
+        border-top: 20px solid ;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        @apply
+            absolute
+            w-0
+            h-0
+            left-1/2
+            border-t-orange
+        ;
+    }
+
+    .card {
+        @apply
+            flex 
+            flex-col 
+            items-center
+            p-6 pb-4
+            text-gray-d
+            bg-white
+            bg-opacity-60
+            rounded-xl
+        ;
+    }
+    .card img {
+        @apply
+            mb-3
+            border-4 border-solid border-primary
+            rounded-full
+        ;
+        width: 100px;
+    }
+    .card h3 {
+        @apply m-0 text-2xl text-primary;
+    }
+}

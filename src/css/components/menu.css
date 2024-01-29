@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* @layer components {
-    .menu {
-        @apply 
-            w-full lg:w-auto
-            lg:flex
-            hidden
-            mt-5 lg:mt-0 
-            text-right
-            border-t-2 border-primary lg:border-none
-        ;
-    }
-} */
-
 @layer components {
     .menu {
         @apply 
@@ -47,27 +33,39 @@
     .menu ul li a {
         @apply 
             block lg:inline-block
-            text-blue-900
-            text-primary
+            text-lemon
             /* hover:text-lemon */
             mx-2
             px-3 py-3 
-            border-b-2 
-            border-blue-900 lg:border-none
+            border-b-2
+            border-primary 
+            lg:border-none
 
-            transition-colors duration-200 ease-linear opacity-100 hover:text-lemon
+            transition-colors duration-200 ease-linear opacity-100 hover:text-yellow
             /* transition-opacity duration-1000 ease-out opacity-100 hover:opacity-0  */
         ;
     }
 
+    .menu ul li a.active {
+        @apply text-white border-solid border-b-2 border-primary
+    }
+
     .menu ul a.btn {
         @apply
-            pt-1.5 pb-2 px-4
-            bg-primary
-            text-white
+        bg-primary
+        text-white
             rounded
-            hover:bg-lemon hover:text-primary-d
+            mt-2
+            lg:mt-0 lg:mr-0
+            lg:pt-1.5 lg:pb-2 lg:px-4
+            border-transparent
+            /* hover:bg-lemon hover:text-primary-d */
         ;
+    }
+    .menu ul a.btn:hover, .menu ul a.btn:focus, .menu ul a.btn.active {
+        @apply 
+            bg-lemon text-primary-d
+            border-2
     }
 }
 

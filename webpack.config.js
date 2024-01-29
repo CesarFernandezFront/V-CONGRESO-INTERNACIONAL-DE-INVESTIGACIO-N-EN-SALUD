@@ -24,7 +24,14 @@ module.exports = {
           'css-loader',
           'postcss-loader' 
         ]
-      }
+      },
+      // {
+      //   loader: 'file-loader',
+      //   options: {
+      //     outputPath: 'img',
+      //     publicPath: '/img',
+      //   },
+      // },  
     ]
   },
 

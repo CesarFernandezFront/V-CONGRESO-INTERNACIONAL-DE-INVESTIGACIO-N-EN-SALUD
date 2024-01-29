@@ -3,7 +3,13 @@
 @import url(./base/list.css);
 @import url(./base/table.css);
 
+@import url(./components/interface.css);
 @import url(./components/menu.css);
+@import url(./components/waves.css);
+@import url(./components/slide-fade.css);
+
+@import url(./animations/animations.css);
+
 
 @tailwind base;
 @tailwind components;

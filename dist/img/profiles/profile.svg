@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L100 0L100 100L0 100L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Group-31-Mask" fill-opacity="1">
+    <path d="M0 0L100 0L100 100L0 100L0 0Z" id="Group-31-Mask" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Group-31-Mask">
+      <path d="M0 0L100 0L100 100L0 100L0 0Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <g id="Group-31" transform="translate(9.5 23.999878)">
+          <path d="M0 76C0 58.3269 18.1325 44 40.5 44C62.8675 44 81 58.3269 81 76C81 93.6731 62.8675 108 40.5 108C18.1325 108 0 93.6731 0 76Z" id="Oval-Copy-5" fill="#0097A7" fill-rule="evenodd" stroke="none" />
+          <path d="M22 18.5C22 8.28273 30.2827 0 40.5 0C50.7173 0 59 8.28273 59 18.5C59 28.7173 50.7173 37 40.5 37C30.2827 37 22 28.7173 22 18.5Z" id="Oval-Copy-6" fill="#0097A7" fill-rule="evenodd" stroke="none" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

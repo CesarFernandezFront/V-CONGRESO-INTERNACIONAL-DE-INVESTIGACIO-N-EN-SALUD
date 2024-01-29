@@ -23,39 +23,53 @@
     <meta property="place:location:latitude" content="2.9389">
     <meta property="place:location:longitude" content="-75.2878">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <head>
-    <div class="fixed z-50 w-full bg-primary-d top-0 py-3 shadow-lg">
+    <div class="fixed z-50 w-full bg-primary-d top-0 py-4 shadow-lg">
       <div class="max-w-7xl mx-auto">
-        <div class="flex flex-wrap items-center justify-between p-3">
+        <div class="flex flex-wrap items-center justify-between px-5">
           <div class="logo flex flex-wrap items-center justify-between">
-            <img src="./img/CIIS.svg" class="pr-2" alt="Logo V Congreso Internacional de Investigación en Salud" title="V Congreso Internacional de Investigación en Salud" />
-            <img src="./img/v-congreso.svg" alt="Logo V Congreso Internacional de Investigación en Salud" title="V Congreso Internacional de Investigación en Salud" />
+            <img src="./img/interface/CIIS.svg" class="pr-2 hidden ss:block" alt="Logo V Congreso Internacional de Investigación en Salud" title="V Congreso Internacional de Investigación en Salud">
+            <img src="./img/interface/v-congreso.svg" class="name" alt="Logo V Congreso Internacional de Investigación en Salud" title="V Congreso Internacional de Investigación en Salud">
           </div>
           <div class="flex lg:hidden">
               <button id="hamburger">
-                <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
-                <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+                <img class="toggle block" src="./img/interface/mh.svg" />
+                <img class="toggle hidden" src="./img/interface/mc.svg" />
               </button>
           </div>
           <nav id="menu" class="toggle-menu menu">
             <ul>
               <li>
-                <a href="#">Presentación</a>
+                <a href="#inicio" class="active">Inicio</a>
               </li>
               <li>
-                <a href="#">Conferencistas</a>
+                <a href="#presentacion">Presentación</a>
               </li>
               <li>
-                <a href="#">Normas</a>
+                <a href="#tematicas">Temáticas</a>
               </li>
               <li>
-                <a href="#">Costos</a>
+                <a href="#conferencistas">Conferencistas</a>
               </li>
               <li>
-                <a href="#" class="btn">Inscríbete</a>
+                <a href="#normas">Normas</a>
+              </li>
+              <li>
+                <a href="#costos">Costos</a>
+              </li>
+              <li>
+                <a href="#inscribete" class="btn">Inscríbete</a>
               </li>
             </ul>
           </nav>
@@ -64,328 +78,188 @@
     </div>
   </head>
 
-  <main class="main">
-    <div class="max-w-6xl mx-auto">
-      <p>.</p>
-      <p>.</p>
-      <p>.</p>
-      <p>.</p>
-      <p>.</p>
-  
-      <h1>Heading &lt;h1&gt;</h1>
-      <h2>Heading &lt;h2&gt;</h2>
-      <h3>Heading &lt;h3&gt;</h3>
-      <h4>Heading &lt;h4&gt;</h4>
-      <h5>Heading &lt;h5&gt;</h5>
-      <h6>Heading &lt;h6&gt;</h6>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat totam quis blanditiis nemo voluptates architecto ad perspiciatis, incidunt sit? Atque voluptatum tenetur ipsam quod, rem doloremque vel delectus assumenda?</p>
-  
-      <br>
-      <br>
-  
-      <h4>A quote!</h4>
-      <blockquote>
-        <p>Lotus is tiny and feisty. There's a lot of style for a little bit of bytes. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias deserunt qui autem ab incidunt et quis ad, similique sequi nisi tempore laborum mollitia recusandae cum dolor officia odit. Voluptas, laborum?</p>
-        <cite>— Doge</cite>
-      </blockquote>
-  
-      <hr>
-  
-      <hgroup>
-          <h2>Lists</h2>
-          <h3>Unordered list</h3>
-      </hgroup>
-      <ul>
-          <li>Really, really, small</li>
-          <li>
-            It Just Works
-            <ul>
-              <li>Responsive</li>
-              <li>Cross Browser Compatible</li>
-            </ul>
-          </li>
-          <li>
-            Lots of Modules
-            <ul>
-              <li>
-                Typography
-                <ul>
-                  <li>OpenSans font</li>
-                </ul>
-              </li>
-              <li>Grid</li>
-              <li>Buttons</li>
-              <li>Forms</li>
-              <li>and More</li>
-            </ul>
-          </li>
-          <li>Really, really, small</li>
-          <li>Really, really, small</li>
-      </ul>
-  
-      <h3>Ordered list</h3>
-      <ol>
-          <li>Create your own custom build below</li>
-          <li>
-            Check the boxes for the modules you want
-            <ol>
-              <li>Grid is a good idea</li>
-              <li>Typograhy is also good too</li>
-              <li>Buttons and Forms seem solid</li>
-            </ol>
-          </li>
-          <li>
-            ???
-            <ol>
-              <li>????</li>
-              <li>?????</li>
-              <li>??????</li>
-              <li>
-                ?
-                <ol>
-                  <li>!</li>
-                  <li>!!</li>
-                  <li>!!!</li>
-                  <li>!!!!!!!1</li>
-                </ol>
-              </li>
-            </ol>
-          </li>
-          <li>Profit</li>
-      </ol>
-  
-      <h3>Nested</h3>
-      <ol>
-          <li>
-          List item one
-          <ul>
-              <li>You might feel like you are being really "organized" o</li>
-              <li>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</li>
-              <li>Nesting tons of folders in your source code is also not helpful.</li>
-          </ul>
-          </li>
-          <li>
-          List item two
-          <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
-              <li>I'm not sure if we'll bother styling more than two levels deep.</li>
-              <li>Two is already too much, three is guaranteed to be a bad idea.</li>
-              <li>If you nest four levels deep you belong in prison.</li>
-          </ul>
-          </li>
-          <li>
-          List item three
-          <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
-              <li>Again please don't nest lists if you want</li>
-              <li>Nobody wants to look at this.</li>
-              <li>I'm upset that we even have to bother styling this.</li>
-          </ul>
-          </li>
-      </ol>
-   
-      <hr>
-  
-      <hgroup>
-          <h2>Tables</h2>
-          <h3>Inside content</h3>
-      </hgroup>
-  
-      <div class="overflow-x-auto">
-          <table class="">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-                <th>Heading</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                  <td>2</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-                  <td>Cell</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-            </tbody>
-          </table>
+  <main class="main w-full">
+    <section id="inicio" class="dinamic w-full relative">
+      <div class="max-w-7xl mx-auto relative">
+        <hgroup class="dinamic__title">
+          <h1><span>V CONGRESO</span><br>INTERNACIONAL DE INVESTIGACIÓN EN SALUD</h1>
+          <h2>Avances y retos en el cuidado de la salud global</h2>
+        </hgroup>
+
+        <div class="absolute z-10 top-11 left-3 right-0 m-auto hidden ss:flex flex-wrap items-center justify-start
+          md:justify-center
+          lg:left-auto lg:pr-5 lg:w-auto lg:mt-6 lg:top-0 lg:justify-between
+          ">
+          <a href="http://usco.edu.co"><img src="./img/interface/usco.svg" alt="Logo de la Universidad Surcolombiana"></a>
+          <span class="relative">
+            <span class="salud">
+              <img src="./img/interface/programa-enfermeria.svg" alt="Programa de Enfermería. Facultad de Ciencas de la Salud">
+            </span>
+          </span>
+        </div>
       </div>
-      
-      <p>.</p>
-      <p>.</p>
-      <p>.</p>
-  
-      <h3>Responsive</h3>
-      <table class="responsive">
-          <caption>Statement Summary</caption>
-          <thead>
-            <tr>
-              <th scope="col">Account</th>
-              <th scope="col">Due Date</th>
-              <th scope="col">Amount</th>
-              <th scope="col">Period</th>
-            </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td data-label="Account">Visa - 3412</td>
-                  <td data-label="Due Date">04/01/2016</td>
-                  <td data-label="Amount">$1,190</td>
-                  <td data-label="Period">03/01/2016 - 03/31/2016</td>
-              </tr>
-              <tr>
-                  <td scope="row" data-label="Account">Visa - 6076</td>
-                  <td data-label="Due Date">03/01/2016</td>
-                  <td data-label="Amount">$2,443</td>
-                  <td data-label="Period">02/01/2016 - 02/29/2016</td>
-                </tr>
-                <tr>
-                  <td scope="row" data-label="Account">Corporate AMEX</td>
-                  <td data-label="Due Date">03/01/2016</td>
-                  <td data-label="Amount">$1,181</td>
-                  <td data-label="Period">02/01/2016 - 02/29/2016</td>
-                </tr>        
-          </tbody>
-      </table>
-  </div>
-  
 
-
-  <!-- <div class="overflow-x-auto">
-      <table class="min-w-full text-left text-sm font-light">
-        <thead class="border-b font-medium dark:border-neutral-500">
-          <tr>
-            <th scope="col" class="px-6 py-4">#</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-            <th scope="col" class="px-6 py-4">Heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td>2</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td class="whitespace-nowrap px-6 py-4 ">Cell</td>
-            <td class="whitespace-nowrap px-6 py-4 ">Cell</td>
-          </tr>
-          <tr class="border-b ">
-            <td>3</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-        </tbody>
-      </table>
-  </div> -->
-
-  <p>https://tw-elements.co</p>
-  <p>https://tailwindcomponents.com/</p>
-
-
-
-  <p>https://tailwindflex.com/@noob_dev/responsive-navbar-example</p>
-
-  <p class="bg-primary">
-      Save changes
-  </p>
-
-  <p class="bg-primary-m">
-      Save changes
-  </p>
-
-  <p class="bg-primary-d">
-      Save changes
-  </p>
-
-  <p class="bg-gray-light">
-      Save changes
-  </p>
-
-  <p class="bg-indigo-500">
-      Save changes
-  </p>
-
-  <div class="text-green-600">Test Input<div>
-  
-  <div class="text-red-500">Test Input<div>
-
-      <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
-          <div class="col-span-2">01</div>
-          <div class="col-span-2">02</div>
-          <div>03</div>
-          <div>04</div>
-          <div>05</div>
+      <div class="slideFade">
+        <ul>
+          <li class="showing">
+            <picture>
+              <source media="(max-width:500px)" srcset="./img/photos/ciis_03s.jpg">
+              <source media="(max-width:768px)" srcset="./img/photos/ciis_03m.jpg">
+              <source media="(max-width:1024px)" srcset="./img/photos/ciis_03x.jpg">
+              <img src="./img/photos/ciis_03xl.jpg" class="w-full" >
+            </picture>          
+          </li>
+          <li>
+            <picture>
+              <source media="(max-width:500px)" srcset="./img/photos/ciis_01s.jpg">
+              <source media="(max-width:768px)" srcset="./img/photos/ciis_01m.jpg">
+              <source media="(max-width:1024px)" srcset="./img/photos/ciis_01x.jpg">
+              <img src="./img/photos/ciis_01xl.jpg" class="w-full" >
+            </picture>          
+          </li>
+          <li>
+            <picture>
+              <source media="(max-width:500px)" srcset="./img/photos/ciis_02s.jpg">
+              <source media="(max-width:768px)" srcset="./img/photos/ciis_02m.jpg">
+              <source media="(max-width:1024px)" srcset="./img/photos/ciis_02x.jpg">
+              <img src="./img/photos/ciis_02xl.jpg" class="w-full" >
+            </picture>          
+          </li>
+        </ul>
+        <button class="controls">
+          <img src="./img/interface/btnPause.svg" alt="Pause" title="Detener cambio de imágenes">
+          <img src="./img/interface/btnPlay.svg" alt="Play" title="Reanudar cambio de imágenes">
+        </button>
       </div>
+
+      <svg class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28 "
+          preserveAspectRatio="none">
+      <defs>
+      <path id="gentle-wave"
+      d="M-160 44c30 0 
+          58-18 88-18s
+          58 18 88 18 
+          58-18 88-18 
+          58 18 88 18
+          v44h-352z" />
+      </defs>
+      <g class="parallax1">
+      <use xlink:href="#gentle-wave" x="50" y="3" fill="#00A4B794"/>
+      </g>
+          <g class="parallax2">
+      <use xlink:href="#gentle-wave" x="50" y="0" fill="#00A4B794"/>
+          </g>
+          <g class="parallax3">
+      <use xlink:href="#gentle-wave" x="50" y="9" fill="#00A4B794"/>
+      </g>
+          <g class="parallax4">
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="#00A4B794"/>  
+      </g>
+      </svg>
+    </section>
+    <!-- <a name="un-nombre"></a> <a id="un-identificador"></a> -->
+    <section id="presentacion" class="section-in w-full bg-primary">
+      <div class="max-w-6xl mx-auto px-5">
+        <article class="grid row-span-2 md:grid-cols-12 gap-8">
+          <div class="row-span-1 md:col-span-8">
+            <h2>Presentación</h2>
+            <p>El V Congreso Internacional de Investigación en Salud (CIIS) abre sus puertas para abordar los desafíos cruciales que enfrentamos en el ámbito de la salud a nivel mundial. Bajo el lema "Avances y retos en el cuidado de la salud global".</p>
+            <p>Este congreso se centra en once líneas temáticas fundamentales que abarcan desde la formación profesional en salud hasta la investigación tecnológica en la educación y la atención en salud. Cada una de estas líneas representa un pilar esencial en la construcción de un sistema de salud global eficiente y sostenible. Desde la influencia de la pandemia de COVID-19 en la atención sanitaria hasta la migración de la fuerza laboral en salud y la promoción de modelos de atención basados en la Atención Primaria de Salud (APS), todas estas áreas se entrelazan para moldear el futuro de la atención en salud.</p>
+            <p>El objetivo general del V CIIS es crear un espacio enriquecedor para la reflexión y el diálogo transdisciplinar del profesional en el ámbito académico, investigativo y político para abordar situaciones relacionadas con el cuidado de la vida desde una perspectiva constructiva, crítica y propositiva; en un mundo donde la salud global se encuentra interconectada.</p>
+            <p>Los invitamos a unirse en este emocionante viaje de exploración, aprendizaje y colaboración mientras se transcienden los límites de la investigación en salud y se construye un camino hacia un futuro más saludable y equitativo para todos.</p>
+          </div>
+          <div class="row-span-1 md:col-span-4 flex justify-center items-center">
+            <img src="./img/interface/CIIS2.svg">
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="tematicas" class="section-in tematicas bk_animate">
+      <div class="bg-no-repeat bg-center bg-right" style="background-image: url('./img/interface/llamas.svg'); background-position-x: 88%;">
+        <div class="max-w-6xl mx-auto px-5">
+          <article class="grid row-span-2 md:grid-cols-12 gap-8">
+            <div class="row-span-1 md:col-span-3">
+              <h2>Temáticas</h2>
+            </div>
+            <div class="row-span-1 md:col-span-9">
+              <div class="grid grid-cols-3 lg:grid-cols-4 gap-6">
+                <p>Retos de la formación profesional en áreas de la salud</p>
+                <p>Implicaciones de la pandemia y postpandemia por COVID19 en la atención en Salud</p>
+                <p>Migración de fuerza laboral en salud</p>
+                <p>Desarrollo teórico y disciplinar de Enfermería</p>
+                <p>Promoción de la salud y Modelos de atención basados en APS</p>
+                <p>Investigación y desarrollo tecnológico en la educación y atención en salud</p>
+                <p>Salud Mental, Género y Salud</p>
+                <p>Salud ambiental</p>
+                <p>Seguridad y salud en el trabajo</p>
+                <p>Sistemas de salud y salud global</p>
+                <p>Práctica de Enfermería en contexto clínico - asistencial</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="conferencistas" class="section-in bg-no-repeat bg-fixed bg-center bg-right bg-contain" style="background-image: url('./img/interface/laboratorio.jpg'); background-color: #C9C9C7;">
+        <article class="max-w-6xl mx-auto px-5">
+          <h2 class="text-gray-m">Conferencistas</h2>
+          <div class="grid grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="card">
+              <img src="./img/profiles/001.jpg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
+            </div>
+            <div class="card">
+              <img src="./img/profiles/profile.svg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
+            </div>
+            <div class="card">
+              <img src="./img/profiles/001.jpg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
+            </div>
+            <div class="card">
+              <img src="./img/profiles/001.jpg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
+            </div>
+          </div>
+        </article>
+    </section>
+    <section id="normas"class="section-in bk_animate">
+      <div class="max-w-6xl mx-auto px-5">
+        <h2>Normas</h2>
+        <ul>
+          <li>
+            <span>Formato de Presentación Trabajos de Investigación</span>
+            <span>
+              Descargar >
+              <a href="fff">hhh</a>
+            </span>
+          </li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="costos" class="section-in">
+        <h2>Costos</h2>
+        <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+    </section>
+    <section id="inscribete" class="section-in">
+        <h2>inscribete</h2>
+        <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+    </section>
   </main>
 
-  <script src="js/bundle.js"></script>
-  <script>
-      document.getElementById("hamburger").onclick = function toggleMenu() {
-        const navToggle = document.querySelectorAll(".toggle");
-        navToggle.forEach(item => {
-            item.classList.toggle("hidden");
-        });
+  <footer class="max-w-6xl mx-auto">
+    footer
+  </footer>
 
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("inline");
-      }
-  </script>    
+  <script src="js/bundle.js"></script>
 </body>
 </html>

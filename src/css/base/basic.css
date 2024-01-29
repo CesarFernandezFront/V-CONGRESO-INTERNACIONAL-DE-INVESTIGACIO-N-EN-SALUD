@@ -1,10 +1,14 @@
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
-        @apply bg-primary text-white;
+        @apply bg-primary-d text-white;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply font-serif mb-4;
+        @apply font-serif mb-6;
     }
 
     h1 {
@@ -27,7 +31,7 @@
     }
 
     p {
-        @apply my-4;
+        @apply mb-4;
     }
 
     hr {

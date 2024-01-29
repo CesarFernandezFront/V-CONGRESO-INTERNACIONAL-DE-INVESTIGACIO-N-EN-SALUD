@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "ss": "420px",
+        "xs": "480px",
+        // sm: '640px',
+        // md: '768px',
+        // lg: '1024px',
+        // xl: '1280px',
+        // // 2xl: '1536px'
+      },
       colors: {
         primary: '#00A4B7',
         'primary-m': '#00707D',
@@ -39,3 +48,4 @@ module.exports = {
 // https://runebook.dev/es/docs/tailwindcss/-index-
 // https://runebook.dev/es/docs/tailwindcss/adding-custom-styles
 // https://tw-elements.com/
+// https://codepen.io/iKlsR/full/PoZbqRg

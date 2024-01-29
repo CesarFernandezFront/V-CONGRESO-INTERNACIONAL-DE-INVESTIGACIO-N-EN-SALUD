@@ -1,3 +1,5 @@
+import { toogleStyle } from "../../utilities/toogleStyle";
+
 export function slideFade(contentSlideFade, timeInterval) {
   const slides = [...contentSlideFade].map(container => {
     return [...container.querySelectorAll('li')];
@@ -15,18 +17,19 @@ export function slideFade(contentSlideFade, timeInterval) {
   }
   
   function pauseSlideshow() {
-    pauseButton.innerHTML = 'Play';
+    // pauseButton.innerHTML = 'Play';
     playing = false;
     clearInterval(slideInterval);
   }
   
   function playSlideshow() {
-    pauseButton.innerHTML = 'Pause';
+    // pauseButton.innerHTML = 'Pause';
     playing = true;
     slideInterval = setInterval(nextSlide,timeInterval);
   }
   
   pauseButton.onclick = function() {
+    toogleStyle(this, "paused")
     playing ? pauseSlideshow() : playSlideshow();
   }
 }

@@ -1,0 +1,26 @@
+@layer components {
+    .bk_animate {
+        /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background: linear-gradient(-45deg, red, yellow);
+         */
+        /* @apply bg-gradient-to-tr from-primary-d via-primary-m to-primary-d; */
+    
+        
+        background: linear-gradient(-45deg, #00A4B7, #095059, #013C43);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        /* bg-no-repeat bg-center bg-right bg-fixed */
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }    
+}

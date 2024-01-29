@@ -1,0 +1,60 @@
+@layer components {
+    .slideFade ul {
+        position: relative;
+        margin: 0px;    
+        padding: 0px;
+        /* height: calc(40vw / 1.25); */
+        height: calc(40vw / 1.1);
+        height: calc(40vw / 0.9);
+        list-style-type: none;
+        overflow: hidden;
+        /* border: 3px solid red; */
+    }
+    
+    .slideFade ul li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        margin: 0 !important;
+        list-style-type: none;
+        transition: opacity 1.5s;
+    }
+
+    .slideFade ul li img {
+        /* width: 100%; */
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* object-cover object-center h-full w-full */
+    
+    .slideFade .showing{
+        opacity: 1;
+        z-index: 2;
+    }
+    
+    .slideFade button.controls {
+        @apply
+            absolute
+            z-20
+            right-5
+            bottom-8
+            md:bottom-24
+        ;
+    }
+    
+    .slideFade button.controls img:last-child {
+        @apply hidden;
+    }
+    .slideFade button.controls.paused img:last-child {
+        @apply block;
+    }
+    .slideFade button.controls.paused img:first-child {
+        @apply hidden;
+    }       
+}
