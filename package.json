@@ -19,8 +19,12 @@
     "style-loader": "^3.3.1",
     "tailwindcss": "3.2.4",
     "webpack": "^5.90.0",
+<<<<<<< HEAD
     "webpack-cli": "5.0.1",
     "webpack-dev-server": "^4.15.1"
+=======
+    "webpack-cli": "5.0.1"
+>>>>>>> df233437341c18b8e5a41618b17ba44dec956d76
   },
   "dependencies": {
     "core-js": "3.27.2"
