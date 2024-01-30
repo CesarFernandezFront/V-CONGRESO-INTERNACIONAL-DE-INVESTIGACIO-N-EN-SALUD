@@ -71,11 +71,6 @@
         @apply py-28 ss:pt-52
     }
 
-    .normas ul {
-
-    }
-
-
     @media (max-width: 420px) {
         .dinamic {
             margin-top: 110px;
@@ -134,5 +129,39 @@
     }
     .card h3 {
         @apply m-0 text-2xl text-primary;
+    }
+
+    .normas ul li {
+        @apply
+            grid row-span-2 sm:grid-cols-12 
+            bg-black bg-opacity-60
+            rounded-md
+        ;
+    }
+    .normas ul li > span {
+        @apply 
+            flex flex-wrap items-center
+            row-span-1 px-4 py-2
+        ;
+    }
+    .normas ul li > span:first-child {
+        @apply sm:col-span-9;
+    }
+    .normas ul li > span:last-child {
+        @apply 
+            justify-between
+            bg-primary-m
+            sm:col-span-3 
+            sm:rounded-r-md
+        ;
+    }
+    .normas ul li > span:last-child a {
+        @apply 
+            p-2
+            bg-white
+            bg-opacity-30
+            rounded-full
+            transition-all duration-200 ease-linear hover:bg-opacity-90
+        ;
     }
 }

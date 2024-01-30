@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="ico-word" fill-opacity="1">
+    <path d="M0 0L26 0L26 26L0 26L0 0Z" id="ico-word" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="ico-word">
+      <path d="M23.8148 26L2.18518 26C0.978546 26 0 25.0215 0 23.8148L0 2.18518C0 0.978546 0.978546 0 2.18518 0L23.8148 0C25.0215 0 26 0.978546 26 2.18518L26 23.8148C26 25.0215 25.0215 26 23.8148 26L23.8148 26Z" id="Shape-21-Copy" fill="#2161C2" stroke="none" />
+      <path d="M18.0368 7.09082L16.2098 15.6755L14.1853 7.09082L11.6007 7.09082L9.51239 15.9415L7.62975 7.09082L5.31812 7.09082L8.0883 18.909L10.8679 18.909L12.8924 9.822L14.918 18.909L17.5783 18.909L20.3485 7.09082L18.0368 7.09082L18.0368 7.09082Z" id="Shape-22-Copy" fill="#FFFFFF" stroke="none" />
+    </g>
+  </g>
+</svg>
