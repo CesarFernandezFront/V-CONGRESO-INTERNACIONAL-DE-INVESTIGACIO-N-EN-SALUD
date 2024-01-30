@@ -397,21 +397,31 @@ table{
   width: 100%;
         /* min-w-full */
 }
+table tr{
+  white-space: nowrap;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 112 125 / var(--tw-border-opacity));
+}
+table tr:first-child{
+  border-width: 0px;
+}
 table th, table td{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+table th:last-child, table td:last-child{
+  border-left-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 112 125 / var(--tw-border-opacity));
 }
 table th{
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
         /* dark:border-neutral-500 */
-}
-table td{
-  white-space: nowrap;
-  border-top-width: 1px;
 }
 @media (max-width: 680px) {
         table.responsive thead{
@@ -1131,6 +1141,9 @@ section.section-in {
 .justify-start{
   justify-content: flex-start;
 }
+.justify-end{
+  justify-content: flex-end;
+}
 .justify-center{
   justify-content: center;
 }
@@ -1199,8 +1212,14 @@ section.section-in {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
 .bg-contain{
   background-size: contain;
+}
+.bg-cover{
+  background-size: cover;
 }
 .bg-fixed{
   background-attachment: fixed;
@@ -1248,6 +1267,10 @@ section.section-in {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .pr-2{
   padding-right: 0.5rem;
@@ -1342,6 +1365,9 @@ section.section-in {
   }
   .md\:w-auto{
     width: auto;
+  }
+  .md\:w-full{
+    width: 100%;
   }
   .md\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));

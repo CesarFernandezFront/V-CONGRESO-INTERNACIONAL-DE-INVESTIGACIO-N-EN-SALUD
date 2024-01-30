@@ -4,17 +4,23 @@
         /* min-w-full */
     }
 
+    table tr {
+        @apply whitespace-nowrap border-t border-primary-m;
+    }
+    table tr:first-child {
+        @apply border-0;
+    }
+
     table th, table td {
-        @apply px-6 py-4;
+        @apply px-4 py-2;
+    }
+    table th:last-child, table td:last-child {
+        @apply border-l border-primary-m;
     }
 
     table th {
         @apply font-medium text-lg;
         /* dark:border-neutral-500 */
-    }
-
-    table td {
-        @apply whitespace-nowrap border-t;
     }
 
     @media (max-width: 680px) {
