@@ -41,7 +41,7 @@
             border-primary 
             lg:border-none
 
-            transition-colors duration-200 ease-linear opacity-100 hover:text-yellow
+            hover:text-yellow
             /* transition-opacity duration-1000 ease-out opacity-100 hover:opacity-0  */
         ;
     }
@@ -52,20 +52,9 @@
 
     .menu ul a.btn {
         @apply
-        bg-primary
-        text-white
-            rounded
-            mt-2
             lg:mt-0 lg:mr-0
             lg:pt-1.5 lg:pb-2 lg:px-4
-            border-transparent
-            /* hover:bg-lemon hover:text-primary-d */
         ;
-    }
-    .menu ul a.btn:hover, .menu ul a.btn:focus, .menu ul a.btn.active {
-        @apply 
-            bg-lemon text-primary-d
-            border-2
     }
 }
 

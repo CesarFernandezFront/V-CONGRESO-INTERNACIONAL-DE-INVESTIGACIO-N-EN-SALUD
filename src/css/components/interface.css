@@ -15,6 +15,25 @@
         padding-top: 130px;
     }
 
+
+    a.btn {
+        @apply
+        bg-primary
+        !text-white
+        rounded
+        mt-2
+        !px-4
+        border-2
+        border-transparent
+        /* hover:bg-lemon hover:text-primary-d */
+        ;
+    }
+    a.btn:hover, a.btn:focus, a.btn.active {
+        @apply 
+            bg-lemon !text-primary-d
+    }
+
+
     .dinamic__title {
         @apply 
             absolute
@@ -163,5 +182,29 @@
             rounded-full
             transition-all duration-200 ease-linear hover:bg-opacity-90
         ;
+    }
+
+    .footer a {
+        @apply 
+            text-gray-b
+            hover:text-primary
+        ;
+    }
+
+    .footer__logo img.pr-2 {
+        height: 140px;
+    }
+    .footer__logo img.name {
+        height: 96px;
+    }
+
+    .footer__logo ul {
+        @apply flex flex-wrap mt-4;
+    }
+    .footer__logo ul li {
+        @apply mb-3;
+    }
+    .footer__logo ul li a {
+        @apply p-4;
     }
 }

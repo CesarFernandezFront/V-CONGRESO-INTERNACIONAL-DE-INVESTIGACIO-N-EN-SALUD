@@ -7,9 +7,13 @@ export function pageScrollNav(contentLinks, sections) {
     const sectionTop = current.offsetTop - 50;
     const NavigationLink = `${contentLinks} a[href*="${sectionId}"]`;
 
-    scrollY > sectionTop && scrollY <= sectionTop + sectionHeight ?
-      document.querySelector(NavigationLink).classList.add("active")
-      :
-      document.querySelector(NavigationLink).classList.remove("active");
+    const linkElement = document.querySelector(NavigationLink);
+
+    if (linkElement) {
+      scrollY > sectionTop && scrollY <= sectionTop + sectionHeight ?
+        linkElement.classList.add("active")
+        :
+        linkElement.classList.remove("active");
+    }
   })
 }

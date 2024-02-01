@@ -5,7 +5,7 @@
     }
 
     table tr {
-        @apply whitespace-nowrap border-t border-primary-m;
+        @apply border-t border-primary-m;
     }
     table tr:first-child {
         @apply border-0;

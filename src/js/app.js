@@ -1,9 +1,7 @@
 
 // scroll detect
-// import { scrollDetectExecute } from './components/scrollDetectExecute/scrollDetectExecute.js';
-// import { externa } from './components/functions/externa.js';
-// import { addClassDisplay } from './components/functions/addClassDisplay.js';
-// import { toggleActive } from './components/functions/toggleActive.js';
+import { scrollDetectExecute } from './components/scrollDetectExecute/scrollDetectExecute.js';
+import { toggleActive } from './components/functions/toggleActive.js';
 import { toogleStyle } from './utilities/toogleStyle.js';
 
 // const boxes = document.querySelectorAll('.box');
@@ -13,8 +11,16 @@ import { toogleStyle } from './utilities/toogleStyle.js';
 // scrollDetectExecute(boxes, addClassDisplay);
 // scrollDetectExecute(boxes, toggleActive);
 
-// // execute functions when scroll detect
-// scrollDetectExecute(boxes, toggleActive);
+// execute functions when scroll detect
+const logoPath = document.querySelectorAll('.logoPath');
+scrollDetectExecute(logoPath, toggleActive);
+
+// const logoPaths = document.querySelectorAll('.logoPath');
+// const elementsLogoPaths = Array.from(logoPaths);
+
+// elementsLogoPaths.forEach(element => {
+//   toogleStyle(element, 'active');
+// });
 
 // Slide fade
 import { slideFade } from './components/slideFade/slideFade.js';
