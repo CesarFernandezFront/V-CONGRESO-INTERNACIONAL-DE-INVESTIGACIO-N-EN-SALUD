@@ -47,3 +47,5 @@ document.getElementById("hamburger").onclick = function toggleMenu() {
   const menu = document.getElementById("menu");
   toogleStyle(menu, "inline");
 }
+
+// https://docs.google.com/forms/d/e/1FAIpQLSfBKApMQu1LNXUg-uH42fNEVqTalV3wolITpTiuINL86vkPbA/viewform
