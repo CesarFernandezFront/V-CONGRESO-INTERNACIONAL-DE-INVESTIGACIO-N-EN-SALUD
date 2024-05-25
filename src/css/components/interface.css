@@ -35,20 +35,21 @@
 
     .dinamic__title {
         @apply 
+            md:justify-start
+            lg:w-[500px]
+            lg:top-12
+
             absolute
             z-20
-            top-3
+            top-[20px]
             ml-5
-            w-full
+            w-11/12
             /* flex flex-wrap items-center justify-center bg-yellow */
             /* bg-gradient-to-b from-teal-400 to-teal-100 bg-opacity-40 h-screen */
             /* bg-gradient-to-b from-teal-400 bg-opacity-40 via-transparent to-teal-100 */
             /* bg-gradient-to-b from-primary bg-opacity-20 via-transparent  */
 
-            md:justify-start
-            lg:top-12
         ;
-        width: 500px;
     }
     .dinamic__title--hgroup {
         @apply 
@@ -78,14 +79,17 @@
 
     .dinamic__title--event {
         @apply
-        px-6
-        py-3
         font-serif
-        text-lemon
-        bg-primary-d
+        text-white
+        bg-none
+        box-content
         rounded-xl
 
         lg:mt-2
+        lg:py-3
+        lg:px-6
+        lg:bg-primary-d
+        lg:text-lemon
         ;
     }
 
@@ -119,10 +123,6 @@
     }
 
     @media (max-width: 420px) {
-        .dinamic {
-            margin-top: 110px;
-        }
-
         section.section-in {
             padding-top: 120px;
         }
@@ -156,26 +156,35 @@
 
     .card {
         @apply
+            relative
             flex 
             flex-col 
             items-center
             p-6 pb-4
+            text-center
             text-gray-d
             bg-white
-            bg-opacity-60
+            bg-opacity-80
             rounded-xl
         ;
     }
-    .card img {
+    .card img.card__photo {
         @apply
             mb-3
             border-4 border-solid border-primary
             rounded-full
         ;
-        width: 100px;
+        width: 180px;
+    }
+    .card img.card__flag {
+        @apply
+            absolute
+            right-0
+        ;
+        height: 40px;
     }
     .card h3 {
-        @apply m-0 text-2xl text-primary;
+        @apply m-0 text-xl text-primary;
     }
 
     .normas ul li {
