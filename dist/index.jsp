@@ -69,7 +69,7 @@
                 <a href="#costos">Costos</a>
               </li>
               <li>
-                <a href="https://forms.gle/yrbHBvTGzaT3NVJu7" target="_blank" class="btn" title="Enlace hacia el formulario de inscripción">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBKApMQu1LNXUg-uH42fNEVqTalV3wolITpTiuINL86vkPbA/viewform" target="_blank" class="btn" title="Enlace hacia el formulario de inscripción">
                   Inscríbete
                 </a>
               </li>
@@ -83,23 +83,16 @@
   <main class="main w-full">
     <section id="inicio" class="dinamic w-full relative">
       <div class="max-w-7xl mx-auto relative">
-        <div class="dinamic__title">
-          <hgroup class="dinamic__title--hgroup">
-            <h1><span>V CONGRESO</span><br>INTERNACIONAL DE INVESTIGACIÓN EN SALUD</h1>
-            <h2>Avances y retos en el cuidado de la salud global</h2>
-          </hgroup>
-  
-          <div class="dinamic__title--event">
-            <h3>5 al 7 de septiembre</h3>
-            Recepción de resúmenes del 22 de mayo al 15 de julio
-          </div>
-        </div>
+        <hgroup class="dinamic__title">
+          <h1><span>V CONGRESO</span><br>INTERNACIONAL DE INVESTIGACIÓN EN SALUD</h1>
+          <h2>Avances y retos en el cuidado de la salud global</h2>
+        </hgroup>
 
-        <div class="absolute z-10 top-[90px] left-[-10px] ml-5 flex flex-wrap items-center justify-start
-          lg:right-0 lg:pr-5 lg:w-auto lg:mt-6 lg:top-0 lg:justify-between
-          sm:left-auto
+        <div class="absolute z-10 top-11 left-3 right-0 m-auto hidden ss:flex flex-wrap items-center justify-start
+          md:justify-center
+          lg:left-auto lg:pr-5 lg:w-auto lg:mt-6 lg:top-0 lg:justify-between
           ">
-          <a href="http://usco.edu.co" title="Enlace hacia el Portal Instituciona de la Universidad Surcolombiana" class="hidden sm:block">
+          <a href="http://usco.edu.co" title="Enlace hacia el Portal Instituciona de la Universidad Surcolombiana">
             <img src="./img/interface/usco.svg" alt="Logo de la Universidad Surcolombiana">
           </a>
           <span class="relative">
@@ -232,37 +225,26 @@
     <section id="conferencistas" class="section-in bg-no-repeat bg-fixed bg-center bg-right bg-contain" style="background-image: url('./img/interface/laboratorio.jpg'); background-color: #C9C9C7;">
         <article class="max-w-6xl mx-auto px-5">
           <h2 class="text-gray-m">Conferencistas</h2>
-          <div class="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-2">
+          <div class="grid grid-cols-3 lg:grid-cols-4 gap-6">
             <div class="card">
-              <img src="./img/profiles/cristiane.jpg" alt="Dra. Cristiane Rodrigues da Rocha" alt="Dra. Cristiane Rodrigues da Rocha" class="card__photo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png" class="card__flag">
-              <h3>Dra. Cristiane Rodrigues da Rocha</h3>
-              <p>Diretora da Escola de Enfermagem Alfredo Pinto da
-              Universidade Federal do
-              Estado do Rio de Janeiro</p>
+              <img src="./img/profiles/001.jpg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
             </div>
             <div class="card">
-              <img src="./img/profiles/consuelo.jpg" alt="Dra. Ma. del Consuelo Chapela" class="card__photo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" class="card__flag">
-              <h3>Dra. Ma. del Consuelo Chapela</h3>
-              <p>Profesora e investigadora de la Universidad
-                Autónoma Metropolitana-Xochimilco.
-                </p>
+              <img src="./img/profiles/profile.svg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
             </div>
             <div class="card">
-              <img src="./img/profiles/noe.jpg" alt="Dr. Noé Alberto Ramírez Elizondo" class="card__photo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/255px-Flag_of_Costa_Rica.svg.png" class="card__flag">
-              <h3>Dr. Noé Alberto Ramírez Elizondo</h3>
-              <p>Vicepresidente de ALADEFE para Centroamérica -
-                Director de la Escuela de Enfermería de la
-                Universidad de Costa Rica</p>
+              <img src="./img/profiles/001.jpg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
             </div>
             <div class="card">
-              <img src="./img/profiles/viviane.jpg" alt="Lic. Viviane Martins Da Silva" class="card__photo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png" class="card__flag">
-              <h3>Lic. Viviane Martins Da Silva</h3>
-              <p>Licenciada en Enfermería - Universidad Estatal de Ceará<br>
-                Magíster en Enfermería -  Universidad Federal de Ceará</p>
+              <img src="./img/profiles/001.jpg" alt="">
+              <h3>Dr. xxxxx xxxxx</h3>
+              <p>Dr. xxx xxxx xxxxx</p>
             </div>
           </div>
         </article>
@@ -337,7 +319,7 @@
           </div>
         </div>
         <div class="flex justify-end mt-4">
-          <a href="https://forms.gle/yrbHBvTGzaT3NVJu7" target="_blank" class="btn py-1.5 px-6" title="Enlace hacia el formulario de inscripción">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBKApMQu1LNXUg-uH42fNEVqTalV3wolITpTiuINL86vkPbA/viewform" target="_blank" class="btn py-1.5 px-6" title="Enlace hacia el formulario de inscripción">
             INSCRÍBETE
           </a>
         </div>
@@ -382,7 +364,7 @@
           <a href="mailot:congresoinvestigacionsalud@usco.edu.co" class="underline">congresoinvestigacionsalud@usco.edu.co</a>
         </p>
         <p>
-          Llámanos:<br>(57) 305 4639649
+          Llámanos:<br>+57 121212 2121 212
         </p>
       </div>
       <div class="row-span-1 md:col-span-3 flex justify-center">
