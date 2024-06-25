@@ -5,26 +5,26 @@
 @layer components {
     .menu {
         @apply 
-            w-full lg:w-auto
-            lg:flex
+            w-full xl:w-auto
+            xl:flex
             hidden
-            mt-5 lg:mt-0 
-            border-t-2 border-primary lg:border-none
+            mt-5 xl:mt-0 
+            border-t-2 border-primary xl:border-none
         ;
     }
 
     .menu ul {
         @apply 
             inline
-            lg:flex
-            mt-5 lg:mt-0 
-            border-t-2 border-primary lg:border-none
+            xl:flex
+            mt-5 xl:mt-0 
+            border-t-2 border-primary xl:border-none
         ;
     }
 
     .menu ul li {
         @apply 
-            lg:flex
+            xl:flex
             items-center
             justify-center
         ;
@@ -32,14 +32,14 @@
 
     .menu ul li a {
         @apply 
-            block lg:inline-block
+            block xl:inline-block
             text-lemon
             /* hover:text-lemon */
             mx-2
             px-3 py-3 
             border-b-2
             border-primary 
-            lg:border-none
+            xl:border-none
 
             hover:text-yellow
             /* transition-opacity duration-1000 ease-out opacity-100 hover:opacity-0  */
@@ -52,8 +52,8 @@
 
     .menu ul a.btn {
         @apply
-            lg:mt-0 lg:mr-0
-            lg:pt-1.5 lg:pb-2 lg:px-4
+            xl:mt-0 xl:mr-0
+            xl:pt-1.5 xl:pb-2 xl:px-4
         ;
     }
 }
