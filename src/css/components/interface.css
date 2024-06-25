@@ -128,6 +128,31 @@
         }
     }
 
+    .talleres {
+        @apply
+        border-b-2
+        border-lemon
+        ;
+    }
+
+    .talleres table {
+        border-collapse: initial;
+    }
+    .talleres table th {
+        @apply
+        bg-lemon
+        bg-opacity-20
+        rounded-lg
+        ;
+    }
+    .talleres table td {
+        @apply
+        bg-white
+        bg-opacity-5
+        rounded-lg
+        ;
+    }
+
     .tematicas p {
         @apply
             relative
