@@ -212,6 +212,28 @@
         @apply m-0 text-xl text-primary;
     }
 
+    .card a:hover {
+        @apply text-black;
+    }
+
+    .card.hotel {
+        @apply mt-16 items-start text-left;
+    }
+    .card.hotel img.card__hotel {
+        @apply -mt-16;
+        /* border-2 border-solid border-primary */
+    }
+    .card.hotel h3 {
+        @apply mt-4 mb-4;
+    }
+    .card.hotel p {
+        @apply flex items-center;
+    }
+    .card.hotel p img {
+        @apply mr-1;
+    }
+
+
     .normas ul li {
         @apply
             grid row-span-2 sm:grid-cols-12 

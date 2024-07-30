@@ -30,6 +30,10 @@
         ;
     }
 
+    .menu ul li.inscription {
+        @apply xl:absolute xl:top-3 xl:right-3;
+    }
+
     .menu ul li a {
         @apply 
             block xl:inline-block
