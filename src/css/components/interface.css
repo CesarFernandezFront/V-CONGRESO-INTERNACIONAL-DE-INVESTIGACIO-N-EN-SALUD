@@ -135,6 +135,13 @@
         ;
     }
 
+    .talleres a {
+        @apply text-white
+
+        hover:text-lemon
+        focus:text-lemon
+    }
+
     .talleres table {
         border-collapse: initial;
     }
