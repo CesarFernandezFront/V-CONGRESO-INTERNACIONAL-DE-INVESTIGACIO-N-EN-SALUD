@@ -261,7 +261,7 @@
         @apply 
             justify-between
             bg-primary-m
-            sm:col-span-3 
+            sm:col-span-3
             sm:rounded-r-md
         ;
     }
